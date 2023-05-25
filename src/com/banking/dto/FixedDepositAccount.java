@@ -5,8 +5,8 @@ public class FixedDepositAccount extends BankAccount {
 	private double depositAmount;
 	private int tenure;
 	
-	public FixedDepositAccount(long acctNo, long bsb, String bankName, double balance, String openingDate) {
-		super(acctNo, bsb, bankName, balance, openingDate);
+	public FixedDepositAccount(long acctNo, long bsb, String bankName, double balance) {
+		super(acctNo, bsb, bankName, balance);
 	}
 
 	@Override

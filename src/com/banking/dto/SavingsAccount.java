@@ -5,8 +5,8 @@ public class SavingsAccount extends BankAccount {
 	private boolean isSalaryAccount;
 	private double minBalance = 100;
 
-	public SavingsAccount(long acctNo, long bsb, String bankName, double balance, String openingDate, boolean isSalaryAccount) {
-		super(acctNo, bsb, bankName, balance, openingDate);
+	public SavingsAccount(long acctNo, long bsb, String bankName, double balance, boolean isSalaryAccount) {
+		super(acctNo, bsb, bankName, balance);
 		this.isSalaryAccount = isSalaryAccount;
 	}
 

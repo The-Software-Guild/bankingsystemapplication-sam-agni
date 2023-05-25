@@ -1,5 +1,7 @@
 package com.banking.dto;
 
+import java.time.LocalDate;
+
 public class Customer {
 	private int id;
 	private String name;
@@ -8,9 +10,9 @@ public class Customer {
 	private String passport;
 	private static int nextId = 100;
 	private BankAccount bankAcct;
-	private String dob;
+	private LocalDate dob;
 	
-	public Customer(String name, int age, int mobile, String passport, String dob) {
+	public Customer(String name, int age, int mobile, String passport, LocalDate dob) {
 		this.id = nextId++;
 		this.name = name;
 		this.age = age;
